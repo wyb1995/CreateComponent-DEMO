@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CreateCompoment-demo</title>
+    <script src="http://static.runoob.com/assets/react/react-0.14.7/build/react.min.js"></script>
+    <script src="http://static.runoob.com/assets/react/react-0.14.7/build/react-dom.min.js"></script>
+    <script src="http://static.runoob.com/assets/react/browser.min.js"></script>
+</head>
+<body>
+<div id="example1"></div>
+<div id="example2"></div>
+<script type="text/babel">
+    class CreateComponent extends React.Component{
+        render(){
+            return (<h1>I am CreateComponent!</h1>);
+        };
+    }
+    class createComponent extends React.Component{
+        render(){
+            return (<h1>I am createComponent!</h1>);
+        };
+    }
+    ReactDOM.render(
+            <CreateComponent/>,
+            document.getElementById('example1')
+    )
+    ReactDOM.render(
+            <createComponent/>,
+            document.getElementById('example2')
+    )
+</script>
+</body>
+</html>
